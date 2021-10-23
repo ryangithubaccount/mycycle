@@ -1,7 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import React, {useState} from 'react';
-import { useHistory } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect
+} from "react-router-dom";
+import MainPage from "./pages"; ///< index.jsx will be automatically imported 
+
 //import firebase from "../node_modules/firebase/app";
 // import firebase from "firebase";
 
@@ -44,20 +52,31 @@ class LoginForm extends React.Component {
   }
 }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to MyCycle!
-        </p>
-        <div className="login-form">
-          <LoginForm />
-        </div>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = { loginForm: new LoginForm() };
+  }
+  handleChange = ({target}) => {
+    this.setState({ [target.name]: target.value });
+  };
+  render(){
+    const loginForm = this.state.loginForm;
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Welcome to MyCycle!
+          </p>
+          <div className="login-form">
+            loginForm
+          </div>
+          <h3>Your password is: {this.state.username}</h3>
+        </header>
+      </div>
+    );
+  }
 }
 
 

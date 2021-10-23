@@ -24,6 +24,13 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+const our_app = new App();
+
+
+ReactDOM.render(
+  <App/>,
+  document.getElementById('root')
+);
 
 const auth = getAuth();
 createUserWithEmailAndPassword(auth, email, password)
@@ -37,13 +44,6 @@ createUserWithEmailAndPassword(auth, email, password)
     const errorMessage = error.message;
     // ..
   });
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
