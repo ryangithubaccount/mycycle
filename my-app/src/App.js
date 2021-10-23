@@ -1,5 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+//import firebase from "../node_modules/firebase/app";
+// import firebase from "firebase";
+
+
+// firebase.initializeApp(); 
+
+
+
 
 function App() {
   return (
