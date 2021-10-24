@@ -9,7 +9,6 @@ import { ThemeProvider } from "@nivo/core";
 const CalendarPage = () => {
   const temp = new Date();
   const today = temp.getFullYear() + '-' + (temp.getMonth() + 1) + '-' + temp.getDate();
-  const lol = "2016-07-12"
   const [date, setDate] = useState(today);
   const [val, setValue] = useState(0);
   return (
@@ -26,7 +25,7 @@ const CalendarPage = () => {
           type="text"
           name="value"
           value={val}
-          //onChange={(target) => setValue(target.value)}
+          onChange={(target) => setValue(target.value)}
       />
       <ResponsiveCalendar
         data={data}
