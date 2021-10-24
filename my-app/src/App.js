@@ -11,6 +11,7 @@ import MainPage from "./pages"; ///< index.jsx will be automatically imported
 import UsersPage from "./pages/users";
 import LoginPage from "./pages/login";
 import HomePage from "./pages/home";
+import CalendarPage from './pages/calendar';
 
 //import firebase from "../node_modules/firebase/app";
 // import firebase from "firebase";
@@ -30,7 +31,8 @@ class App extends React.Component {
       <Router>
         <Route exact path="/" component={LoginPage} />
         <Route exact path="/users" component={UsersPage} />
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/home" component={HomePage} />
+        <Route exact path="/calendar" component={CalendarPage} />
       </Router>
     );
   }

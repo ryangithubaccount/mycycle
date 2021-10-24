@@ -37,6 +37,7 @@ class LoginForm extends React.Component {
             <h3>Your username is: {this.state.username}</h3>
             <button>Sign In</button>
             <Link to="/home">SIGN IN</Link>
+            <Link to="/calendar">CALENDAR</Link>
         </React.Fragment>
         );
     }
