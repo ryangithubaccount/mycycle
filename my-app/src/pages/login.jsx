@@ -1,6 +1,7 @@
 /*login.jsx*/
 import React from "react";
 import { Link } from "react-router-dom";
+import './main.css';
 
 //Functional Component 
 
@@ -45,6 +46,15 @@ class LoginForm extends React.Component {
 
 const LoginPage = () => {
     return(
+        <div>
+        <div id="navbar">
+        <div id="title">MyCycle</div>
+        <div id="navbar-items">
+          <ul><Link to="/home">Home</Link></ul>
+          <ul><Link to="/home">Friends</Link></ul>
+          <ul><Link to="/home">Log Out</Link></ul>
+        </div>
+      </div>
         <div className="LogIn">
         <header className="LogIn-header">
             <p>
@@ -54,6 +64,7 @@ const LoginPage = () => {
                 <LoginForm/>
             </div>
         </header>
+        </div>
         </div>
     );
 };

@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ResponsivePie } from "@nivo/pie"
+import './main.css';
 //Functional Component 
 
 const pieData = [

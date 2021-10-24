@@ -29,6 +29,7 @@ class App extends React.Component {
   };
   render(){
     return (
+      <div>
       <Router>
         <Route exact path="/" component={LoginPage} />
         <Route exact path="/users" component={UsersPage} />
@@ -36,6 +37,7 @@ class App extends React.Component {
         <Route exact path="/calendar" component={CalendarPage} />
         <Route exact path="/pie" component={Pie} />
       </Router>
+      </div>
     );
   }
 }

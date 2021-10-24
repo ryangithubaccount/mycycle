@@ -1,10 +1,8 @@
 /*index.jsx*/
 import React from "react";
-import { Link } from "react-router-dom";
 import { ResponsiveCalendar } from "@nivo/calendar"
+import './main.css';
 //Functional Component 
-
-
 const CalendarPage = () => {
   
   return (
@@ -12,13 +10,6 @@ const CalendarPage = () => {
       <h1>
         TESTINGGGGGG
       </h1>
-      {/* <ResponsiveCalendar
-        width={500}
-        height={500}
-        from='2021-10-23'
-        to='2022-10-23'
-        data={data}
-      /> */}
       <ResponsiveCalendar
         data={data}
         from="2015-03-01"
