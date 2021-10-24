@@ -5,7 +5,6 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    padding: 30px;
   }
   
 code {
@@ -17,20 +16,28 @@ code {
       display:flex;
       flex-direction: row;
       justify-content: space-between;
-      /* padding: 30px; */
+      padding: 10px 30px 10px 30px;
+      background-color: #3E3E44;
 }
 
 #title{
     font-size: 36px;
-    font-weight: bolder;
+    font-weight: 15px;
+    text-decoration: none;
+    color: white;
 }
 
 #navbar-items {
     display:flex;
     flex-direction: row;
-    text-decoration: none;
 }
 
-#navbar-items ul {
+.link {
     text-decoration: none;
+    color: white;
+}
+
+#link-container {
+    display:flex;
+    flex-direction: column;
 }
