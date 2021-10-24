@@ -22,11 +22,11 @@ const FriendsPage = () => {
           <div class="module" id="m2">
               <div id="m2-content">
                 <img id="pfp" src={bean} alt="bean" />
-                <h2>First Last</h2>
-                <h5>status</h5>
-                <p>bio</p>
-                <button>Edit Profile</button>
-                <button>Settings</button>
+                <h2>Bean Chan</h2>
+                <p>bio here -- hi! I’m Bean Chan and I like chocolate n cookies</p>
+                <br /><br />
+                <button class="btn">Edit Profile</button>
+                <button class="btn">Settings</button>
               </div>
           </div>
       </div>
