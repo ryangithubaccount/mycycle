@@ -11,7 +11,7 @@ const FriendsPage = () => {
       <div id="navbar">
         <div id="title">❉ MyCycle</div>
         <div id="navbar-items">
-          <ul><Link to="/home" class="link">Home</Link></ul>
+          <ul><Link to="/calendar" class="link">Home</Link></ul>
           <ul><Link to="/friends" class="link">Friends</Link></ul>
           <ul><Link to="/home" class="link">Log Out</Link></ul>
         </div>
