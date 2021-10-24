@@ -2,14 +2,18 @@
 import React from "react";
 import { ResponsiveCalendar } from "@nivo/calendar"
 import './main.css';
+import Pie from "./pie"
 //Functional Component 
+
+//const handleClick
+
 const CalendarPage = () => {
-  
   return (
     <div style={{height:800}}>
       <h1>
         TESTINGGGGGG
       </h1>
+      <Pie/>
       <ResponsiveCalendar
         data={data}
         from="2015-03-01"
