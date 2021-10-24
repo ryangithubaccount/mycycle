@@ -12,6 +12,7 @@ import UsersPage from "./pages/users";
 import LoginPage from "./pages/login";
 import HomePage from "./pages/home";
 import CalendarPage from './pages/calendar';
+import Pie from './pages/pie';
 
 //import firebase from "../node_modules/firebase/app";
 // import firebase from "firebase";
@@ -33,6 +34,7 @@ class App extends React.Component {
         <Route exact path="/users" component={UsersPage} />
         <Route exact path="/home" component={HomePage} />
         <Route exact path="/calendar" component={CalendarPage} />
+        <Route exact path="/pie" component={Pie} />
       </Router>
     );
   }
