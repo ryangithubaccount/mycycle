@@ -2,38 +2,31 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ResponsivePie } from "@nivo/pie"
-import './main.css';
 //Functional Component 
 
 const pieData = [
     {
-      id: "java",
-      label: "java",
-      value: 195,
-      color: "hsl(90, 70%, 50%)"
-    },
-    {
-      id: "erlang",
-      label: "erlang",
-      value: 419,
+      id: "period",
+      label: "period",
+      value: 5,
       color: "hsl(56, 70%, 50%)"
     },
     {
-      id: "ruby",
-      label: "ruby",
-      value: 407,
+      id: "follicular phase",
+      label: "follicular phase",
+      value: 6,
       color: "hsl(103, 70%, 50%)"
     },
     {
-      id: "haskell",
-      label: "haskell",
-      value: 474,
+      id: "fertile window",
+      label: "fertile window",
+      value: 5,
       color: "hsl(186, 70%, 50%)"
     },
     {
-      id: "go",
-      label: "go",
-      value: 71,
+      id: "luteal phase",
+      label: "luteal phase",
+      value: 16,
       color: "hsl(104, 70%, 50%)"
     }
   ];
