@@ -49,6 +49,12 @@ code {
     /* height: 800px; */
 }
 
+#calendar-page {
+    background-color: #D7DFFE;
+    height: 100vh;
+    /* height: 800px; */
+}
+
 .module-container {
     display:flex;
     flex-direction: row;
