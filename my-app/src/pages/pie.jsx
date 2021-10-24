@@ -40,21 +40,19 @@ const pieData = [
 
 const Pie = () => {
     return (    
-        <div style={{height:800}}>
-            <h1>TESTING PT 2 :D</h1>
-            <p>be sure you run yarn add @nivo/pie</p>
+        <div style={{height:400}}>
         <ResponsivePie
             data={pieData}
-            margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-            innerRadius={0.5}
+            margin={{ top: 20, right: 40, bottom: 40, left: 40 }}
+            innerRadius={0.25}
             padAngle={0.7}
-            cornerRadius={3}
-            activeOuterRadiusOffset={8}
-            borderWidth={1}
+            cornerRadius={1.5}
+            activeOuterRadiusOffset={4}
+            borderWidth={0.5}
             borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}
             arcLinkLabelsSkipAngle={10}
             arcLinkLabelsTextColor="#333333"
-            arcLinkLabelsThickness={2}
+            arcLinkLabelsThickness={1}
             arcLinkLabelsColor={{ from: "color" }}
             arcLabelsSkipAngle={10}
             arcLabelsTextColor={{ from: "color", modifiers: [["darker", 2]] }}

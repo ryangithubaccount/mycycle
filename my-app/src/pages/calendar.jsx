@@ -1,19 +1,24 @@
 /*index.jsx*/
-import React from "react";
+import React, {useState} from "react";
 import { ResponsiveCalendar } from "@nivo/calendar"
 import './main.css';
 import Pie from "./pie"
 //Functional Component 
 
-//const handleClick
-
 const CalendarPage = () => {
+  const temp = new Date();
+  const today = temp.getFullYear() + '-' + (temp.getMonth() + 1) + '-' + temp.getDate();
+  const [date, setDate] = useState(today);
+  //const [value, setValue] = useState(0);
   return (
     <div style={{height:800}}>
       <h1>
         TESTINGGGGGG
       </h1>
       <Pie/>
+      <h1>
+        {date}
+      </h1>
       <ResponsiveCalendar
         data={data}
         from="2015-03-01"
@@ -37,6 +42,7 @@ const CalendarPage = () => {
                 itemDirection: 'right-to-left'
             }
         ]}
+        onClick={(data) => setDate(data.day)}//, setValue(data.value)}
     />
 
     </div>
