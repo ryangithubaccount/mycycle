@@ -3,13 +3,15 @@ import React, {useState} from "react";
 import { ResponsiveCalendar } from "@nivo/calendar"
 import './main.css';
 import Pie from "./pie"
+import { ThemeProvider } from "@nivo/core";
 //Functional Component 
 
 const CalendarPage = () => {
   const temp = new Date();
   const today = temp.getFullYear() + '-' + (temp.getMonth() + 1) + '-' + temp.getDate();
+  const lol = "2016-07-12"
   const [date, setDate] = useState(today);
-  //const [value, setValue] = useState(0);
+  const [val, setValue] = useState(0);
   return (
     <div style={{height:800}}>
       <h1>
@@ -19,10 +21,17 @@ const CalendarPage = () => {
       <h1>
         {date}
       </h1>
+      <label htmlFor="value">value</label>
+      <input
+          type="text"
+          name="value"
+          value={val}
+          //onChange={(target) => setValue(target.value)}
+      />
       <ResponsiveCalendar
         data={data}
-        from="2015-03-01"
-        to="2016-07-12"
+        from={temp.getFullYear() - 1 + '-' + (temp.getMonth() + 1) + '-' + temp.getDate()}
+        to={temp.getFullYear() + '-' + (temp.getMonth() + 1) + '-' + temp.getDate()}
         emptyColor="#eeeeee"
         colors={[ '#61cdbb', '#97e3d5', '#e8c1a0', '#f47560' ]}
         margin={{ top: 40, right: 40, bottom: 40, left: 40 }}
@@ -52,31 +61,31 @@ const CalendarPage = () => {
 const data = [
   {
     "value": 229,
-    "day": "2018-04-17"
+    "day": "2020-04-17"
   },
   {
     "value": 362,
-    "day": "2018-06-05"
+    "day": "2020-06-05"
   },
   {
     "value": 371,
-    "day": "2016-02-23"
+    "day": "2020-02-23"
   },
   {
     "value": 63,
-    "day": "2017-09-16"
+    "day": "2020-09-16"
   },
   {
     "value": 293,
-    "day": "2017-09-23"
+    "day": "2020-09-23"
   },
   {
     "value": 94,
-    "day": "2017-02-20"
+    "day": "2020-02-20"
   },
   {
     "value": 175,
-    "day": "2017-08-07"
+    "day": "2020-08-07"
   },
   {
     "value": 115,
