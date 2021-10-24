@@ -37,8 +37,6 @@ class LoginForm extends React.Component {
             </form>
             <h3>Your username is: {this.state.username}</h3>
             <button>Sign In</button>
-            <Link to="/home">SIGN IN</Link>
-            <Link to="/calendar">CALENDAR</Link>
         </React.Fragment>
         );
     }
@@ -48,22 +46,28 @@ const LoginPage = () => {
     return(
         <div>
         <div id="navbar">
-        <div id="title">MyCycle</div>
-        <div id="navbar-items">
-          <ul><Link to="/home">Home</Link></ul>
-          <ul><Link to="/home">Friends</Link></ul>
-          <ul><Link to="/home">Log Out</Link></ul>
-        </div>
-      </div>
-        <div className="LogIn">
-        <header className="LogIn-header">
-            <p>
-            Welcome to MyCycle!
-            </p>
-            <div className="login-form">
-                <LoginForm/>
+            <div id="title">❉ MyCycle</div>
+            <div id="navbar-items">
+                <ul><Link to="/home" class="link">Home</Link></ul>
+                <ul><Link to="/friends" class="link">Friends</Link></ul>
+                <ul><Link to="/home" class="link">Log Out</Link></ul>
             </div>
-        </header>
+      </div>
+
+        <div className="LogIn">
+        <header className="LogIn-header"></header>
+        <p>Welcome to MyCycle!</p>
+        <div className="login-form">
+            <LoginForm/>
+        </div>
+        <div id="link-container">
+            <Link to="/home">Show Home</Link>
+            <Link to="/users">Show List of Users</Link>
+            <Link to="/calendar">Show Calendar</Link>
+            <Link to="/pie">Show Pie</Link>
+            <Link to="/">Show Login Page</Link>
+            <Link to="/friends" class="link">Friends</Link>
+        </div>
         </div>
         </div>
     );
