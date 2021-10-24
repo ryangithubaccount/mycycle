@@ -41,3 +41,44 @@ code {
     display:flex;
     flex-direction: column;
 }
+
+/* ================FRIENDS PAGE================ */
+#friends-page {
+    background-color: #D7DFFE;
+    height: 800px;
+}
+
+.module-container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.module {
+    background-color: white;
+    border-radius: 30px;
+    height: 500px;
+}
+
+#m1 {
+    width: 60%;
+}
+
+#m2 {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#m2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 30px;
+}
+
+#pfp {
+    border-radius: 50%;
+    width: 150px;
+}

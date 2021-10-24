@@ -21,7 +21,7 @@ const HomePage = () => {
         <Link to="/calendar">Show Calendar</Link>
         <Link to="/pie">Show Pie</Link>
         <Link to="/">Show Login Page</Link>
-        <ul><Link to="/friends" class="link">Friends</Link></ul>
+        <Link to="/friends">Friends</Link>
       </div>
     </div>
   );
